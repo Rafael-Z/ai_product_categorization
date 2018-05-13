@@ -2,6 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+# adapted from https://stackoverflow.com/questions/12926779/how-to-make-a-sunburst-plot-in-r-or-python
 def sunburst(nodes, hide_level=[], highlight_option=[], total=np.pi * 2, offset=0, level=0, ax=None, figsize=(10, 10), showLabel=True):
     if ax == None:
         fig = plt.figure(figsize=figsize)
